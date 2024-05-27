@@ -12,6 +12,8 @@
         <div class="items">
             <div class="item" :class="{'active': index === currentActive}" v-for="(image, index) in images">
                 <img :src="image.image" alt="image.title" >
+                <h3>{{ image.title }}</h3>
+                <p> {{ image.text }} </p>
             </div> 
 
             <div class="prev" @click="goPrev()"></div>
